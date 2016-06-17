@@ -1,0 +1,61 @@
+0. Sprawy organizacyjne 
+	- pol godziny rozliczenia
+	- co dwa tygodnie
+	- aplikacja , backend frontend middlware - flask bottle, sse , webserveice restful
+1. Installacja srodowiska
+	- repo https://github.com/hyurii/python.git
+	- git , tortoise
+	- python 2.7.11 
+	- eclipse
+	- pydev  : http://update-production-pydev.s3.amazonaws.com/pydev/updates/site.xml
+	- pep8
+	- zmienne srodowiskowowe PATH i PYTHONPATH
+2. Tworzenie projektu
+	- template
+	- globals()
+3. Dokumentacja , https://docs.python.org , https://pypi.python.org/pypi
+4. Program
+	- camelCase
+	- print
+	- typy danych (int, int long, boolean, string, float ,complex) - type() 
+	- operacje na zmiennych
+	- deklaracja, inicializacja i definicja
+	- operacje -, +, ++, < , a=b=c=1 , str(), int() , float() , str[2:2], pow() , -x, % , /
+	-  input,
+5. Zadanie
+	- Sprawdzic co to jest PEP20 - Zen of Python
+	- Zainstalowac gita/ tortoisa i sklonowac repo z githuba (nie uieszczac projektowych i prywatnych rzeczy - repo jest publiczne)
+	- Zastanowic sie nad aplikacja, ktora bedziemy dewelopowac w grupie
+	- Zrobic zadanie w domu i zaladowac na repo:
+		Napisac skrypt ktory pyta nas o:
+		1. ilosc wszystkich PRek:
+		2. ilosc Fail A
+		3. ilosc Fail B
+		4. ilosc Fail S
+		i drukuje % wszystkich prek i fail S/A/B
+6. QUIZ
+1. Jaki jest Wynik:
+print 7/2**2
+
+A) 12,25
+B) 7
+C) 1
+D) 9
+
+2. Jaki jest Wynik:
+print ('1')+('2')+('print("print")'); print 1
+
+A) 12print("print")
+   1
+B) 12print
+C) SyntaxError: invalid syntax
+D) 12print1
+
+2. Jaki jest Wynik:
+
+spam = input("Podaj ilosc jaj:"") # Podajemy 2
+spam = str(spam)
+spam = spam + "0"
+eggs = int(spam) + 3
+print float(eggs)
+
