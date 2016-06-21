@@ -1,0 +1,7 @@
+allPR=float(input("Podaj ilosc wszystkich PRek: "))
+APR=float(input("Podaj ilosc PRek A: "))
+BPR=float(input("Podaj ilosc PRek B: "))
+SPR=float(input("Podaj ilosc PRek S: "))
+print "Procent S: %0.0f%%" % (SPR/allPR*100.0)
+print "Procent B: %0.0f%%" % (BPR/allPR*100.0)
+print "Procent A: %0.0f%%" % (APR/allPR*100.0)
