@@ -63,8 +63,7 @@ print "- Summany/Status:" + status[generalStatus]
 print "- Occurrence of minimum 1 Showstopper introduced by current delivery tasks, which NOT exist on earlier SI baseline: {0}, {1}".format(
     status[statusSS], str(newS))
 print '- Percentage (%) of \"failed\" (by S, A, B PRs) and \"not implemented\" statuses of TCs in Spotcheck: {0}, {1}'.format(
-    status[
-        statusTC], str(int(procTC)))
+    status[statusTC], str(int(procTC)))
 print '- Percentage (%) of failed delivered PRs (S, A, B): {0}, A+S: {1}, B: {2}'.format(status[statusOldPR], str(
     int(procFailSA)), str(int(procFailB)))
 print '- Number of PRs (S, A, B) discovered during testing delivered CRs/FTs: {0}, {1}'.format(status[statusNew], str(
@@ -79,8 +78,7 @@ f.write(
         status[statusSS], str(newS)))
 f.write(
     '- Percentage (%) of \"failed\" (by S, A, B PRs) and \"not implemented\" statuses of TCs in Spotcheck: {0}, {1}\n'.format(
-        status[
-            statusTC], str(int(procTC))))
+        status[statusTC], str(int(procTC))))
 f.write("- Percentage (%) of failed delivered PRs (S, A, B): {0}, A+S: {1}, B: {2}\n".format(status[statusOldPR], str(
     int(procFailSA)), str(int(procFailB))))
 f.write(
