@@ -33,7 +33,7 @@ procFailB = float(failedB) / totalPRCR * 100.0
 
 if procFailSA > 20 or procFailB > 40:
     statusOldPR = 2
-elif (procFailSA >= 10 and procFailSA <= 20) or (procFailB >= 20 or procFailB <= 40):
+elif (procFailSA >= 10 and procFailSA <= 20) or (procFailB >= 20 and procFailB <= 40):
     statusOldPR = 1
 else:
     statusOldPR = 0
