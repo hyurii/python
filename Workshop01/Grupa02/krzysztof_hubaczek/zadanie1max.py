@@ -87,23 +87,23 @@ def checkValues():
     newS = newSinput.get()
     newA = newAinput.get()
     newB = newBinput.get()
-    if totalTC == "0" or totalTC.isspace() or not totalTC.isdigit():
+    if not (
+                                        totalTC.isdigit() and failedTC.isdigit() and totalPRCR.isdigit() and notRun.isdigit() and failedS.isdigit() and failedA.isdigit() and failedB.isdigit() and newS.isdigit() and newA.isdigit() and newB.isdigit()):
+        tkMessageBox.showwarning("Alert", "Wprowadz poprawne dane!!!")
+        return False
+    elif totalTC == "0" or totalTC.isspace() or not totalTC.isdigit():
         tkMessageBox.showwarning("Alert", "Wprowadz poprawna ilosc wszystich TC w spotchecku")
         totalTCinput.delete(0, END)
         return False
     elif totalPRCR == "0" or totalPRCR.isspace() or not totalPRCR.isdigit():
-        tkMessageBox.showwarning("Alert", "Wprowadz poprawna ilosc wszystich PR/CR w deliverce")
+        tkMessageBox.showwarning("Alert", "Wprowadz poprawna ilosc wszystich PR/CR w deliwerce")
         totalPRCRinput.delete(0, END)
         return False
     elif int(failedTC) > int(totalTC):
         tkMessageBox.showwarning("Alert", "Wprowadz poprawna ilosc TC i failedTC w spotchecku")
         return False
     elif int(totalPRCR) < int(notRun) + int(failedS) + int(failedB) + int(failedA):
-        tkMessageBox.showwarning("Alert", "Wprowadz poprawna ilosc PR (NotRun/S/A/B) w spotchecku")
-        return False
-    elif not (
-                                                totalTC.isdigit() and failedTC.isdigit() and totalPRCR.isdigit() and notRun.isdigit() and failedS.isdigit() and failedA.isdigit() and failedB.isdigit() and newS.isdigit() and newA.isdigit() and newB.isdigit()):
-        tkMessageBox.showwarning("Alert", "Wprowadz poprawne dane!!!")
+        tkMessageBox.showwarning("Alert", "Wprowadz poprawna ilosc PR (NotRun/S/A/B) w deliwerce")
         return False
     else:
         return True
@@ -175,7 +175,7 @@ mainWindow.resizable(width=False, height=False)
 
 inputFrame = Frame(mainWindow, padx=10, pady=10)
 inputFrame.pack(fill="both")
-resultFrame = LabelFrame(mainWindow, text="Raport", font=("Verdana", 15), padx=10, pady=10)
+resultFrame = LabelFrame(mainWindow, text=" Raport ", font=("Verdana", 15, "bold"), padx=10, pady=10)
 resultFrame.pack(pady=5)
 
 label0 = Label(inputFrame, text="Wprowadz wartosci:", font=("Vileda", 15, "bold"))
@@ -224,7 +224,7 @@ newBinput.grid(row=6, column=3)
 raportButton = Button(inputFrame, text="Generuj raport", command=raport).grid(row=1, column=4)
 resetButton = Button(inputFrame, text="Resetuj pola", command=reset).grid(row=2, column=4)
 
-textField = Text(resultFrame, width=125, height=8)
+textField = Text(resultFrame, width=140, height=8)
 textField.grid()
 
 rapSave = Button(inputFrame, text="Zapisz raport", command=fileSave).grid(row=5, column=4)
