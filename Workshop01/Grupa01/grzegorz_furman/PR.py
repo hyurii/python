@@ -17,8 +17,8 @@ b = input("Enter the number of Fail B: ")
 s = input("Enter the number of Fail S: ")
 
 print " "
-print "Total PR's = ", pr, "(", int((pr*100)/pr), "%", ")"
-print "Fail A = ", a, "(", float((a*100)/pr), "%", ")"
-print "Fail B = ", b, "(", float((b*100)/pr), "%", ")"
-print "Fail S = ", s, "(", float((s*100)/pr), "%", ")"
+print "Total PR's = ", pr, "(", int((pr * 100) / pr), "%", ")"
+print "Fail A = ", a, "(", (float(a) * 100 / pr), "%", ")"
+print "Fail B = ", b, "(", (float(b) * 100 / pr), "%", ")"
+print "Fail S = ", s, "(", (float(s) * 100 / pr), "%", ")"
 
