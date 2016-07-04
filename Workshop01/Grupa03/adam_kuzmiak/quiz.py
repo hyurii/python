@@ -1,0 +1,1 @@
+# podajemy liczb peerek wszystkich plus peerki klasy a b s. obliczamy procenty
