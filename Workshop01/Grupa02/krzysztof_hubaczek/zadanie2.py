@@ -1,3 +1,8 @@
+'''
+Created on 4 lip 2016
+@author: hubackrz
+'''
+
 def procent(dzielna, dzielnik):
     try:
         return (float(dzielna) / dzielnik * 100.0)
