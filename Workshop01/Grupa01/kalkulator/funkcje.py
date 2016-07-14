@@ -21,7 +21,7 @@ def dodaj():
     x1 = inputInt("Podaj pierwsza liczbe: ")
     x2 = inputInt("Podaj druga liczbe: ")
     y = x1 + x2
-    return y
+    print y
 
 
 def pomnoz():
