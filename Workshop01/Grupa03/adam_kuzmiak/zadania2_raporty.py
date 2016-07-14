@@ -42,14 +42,18 @@ while True:
     #warunki rest 30% green
     if fail_s_p>0.0:
         print "CZEROWNY"
+        print fail_s_p
     elif fail_a_p >= 10.0:
         print "czerwony"
+        print fail_a_p
     elif fail_b_p >= 20.0:
         print "zolty"
+        print fail_b_p
     elif fail_r_p >= 30.0:
         print "zielony"
+        print fail_r_p
     else:
-        print "coś jest namieszane albo nie ma zadnych PRrk"
+        print "cos jest namieszane albo nie ma zadnych PRrk"
 
     print "Konczymy zabawe T czy N"
     konic=raw_input()
