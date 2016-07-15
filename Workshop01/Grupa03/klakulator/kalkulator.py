@@ -3,6 +3,7 @@ Created on 15 lip 2016
 
 @author: giberkrz
 '''
+from calc_func import *
 
 Zmienna = ""
 while Zmienna != "X":      
@@ -14,7 +15,7 @@ while Zmienna != "X":
     print "[W] pierwiastek "
     print "[T] potega"
     print "[X] wyjscie"
-    
+
     Zmienna=raw_input("Podaj dzialanie jakie chcesz wykonac: ")
     if Zmienna == "P":
         print suma()
@@ -28,5 +29,4 @@ while Zmienna != "X":
         print pierw()
     elif Zmienna == "T":
         print potega()
-
 
