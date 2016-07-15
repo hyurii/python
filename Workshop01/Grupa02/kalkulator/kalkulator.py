@@ -54,6 +54,6 @@ while True:
         break
     else:
         continue
-    ans = raw_input("Czy chcesz wykonac kolejna operacje? (t / n)")
-    if "t" == ans:
+    next_operation = raw_input("Czy chcesz wykonac kolejna operacje? (t / n)")
+    if "t" == next_operation:
         break
