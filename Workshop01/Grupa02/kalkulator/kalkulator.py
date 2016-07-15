@@ -36,24 +36,24 @@ while True:
     [0] wyjscie
     """
     ans = int(raw_input("Twoj wybor: "))
-    print "text:", ans
+
     if 1 == ans:
-        print dodawanie()
+        print kalk_funkcje.dodawanie()
     elif 2 == ans:
-        print odejmowanie()
+        print kalk_funkcje.odejmowanie()
     elif 3 == ans:
-        print mnozenie()
+        print kalk_funkcje.mnozenie()
     elif 4 == ans:
-        print dzielenie()
+        print kalk_funkcje.dzielenie()
     elif 5 == ans:
-        print potegowanie()
+        print kalk_funkcje.potegowanie()
     elif 6 == ans:
-        print pierwiastkowanie()
+        print kalk_funkcje.pierwiastkowanie()
     elif 0 == ans:
         print "Konczymy"
         break
     else:
         continue
-    next_operation = raw_input("Czy chcesz wykonac kolejna operacje? (t / n)")
+    next_operation = raw_input("Czy chcesz przerwac? (t / n)")
     if "t" == next_operation:
         break

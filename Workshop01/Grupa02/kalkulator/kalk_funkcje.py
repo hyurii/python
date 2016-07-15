@@ -40,12 +40,3 @@ def pierwiastkowanie():
     x = float(input("Podaj postawe potegi: "))
     pierwiastek = sqrt(x)
     return pierwiastek
-
-x=2
-y=2
-print dodawanie(x,y)
-print odejmowanie(x,y)
-print mnozenie(x,y)
-print dzielenie(x,y)
-print potegowanie(x,y)
-print pierwiastkowanie(x,y)
