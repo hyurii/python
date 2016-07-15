@@ -4,8 +4,8 @@ Created on 15 lip 2016
 @author: giberkrz
 '''
 
-if __name__ == '__main__':
-    
+Zmienna = ""
+while Zmienna != "X":      
     print "Dostepne dzialania: "
     print "[P] dodawanie "
     print "[O] odejmowanie "
@@ -13,19 +13,20 @@ if __name__ == '__main__':
     print "[D] dzielenie"
     print "[W] pierwiastek "
     print "[T] potega"
+    print "[X] wyjscie"
     
     Zmienna=raw_input("Podaj dzialanie jakie chcesz wykonac: ")
     if Zmienna == "P":
-        suma()
+        print suma()
     elif Zmienna =="O":
-        odejm()
+        print odejm()
     elif Zmienna=="M":
-        mnoz()
+        print mnoz()
     elif Zmienna=="D":
-        dziel()
+        print dziel()
     elif Zmienna == "W":
-        pierw()
+        print pierw()
     elif Zmienna == "T":
-        potega()
-    
-    pass
+        print potega()
+
+
