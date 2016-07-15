@@ -1,4 +1,4 @@
-# import kalk_funkcje
+import kalk_funkcje
 
 
 # def dodawanie():
