@@ -18,15 +18,15 @@ while Zmienna != "X":
 
     Zmienna=raw_input("Podaj dzialanie jakie chcesz wykonac: ")
     if Zmienna == "P":
-        print suma()
+        print addition()
     elif Zmienna =="O":
-        print odejm()
+        print subtraction()
     elif Zmienna=="M":
-        print mnoz()
+        print multiplication()
     elif Zmienna=="D":
-        print dziel()
+        print division()
     elif Zmienna == "W":
-        print pierw()
+        print roots()
     elif Zmienna == "T":
-        print potega()
+        print exponentiation()
 
