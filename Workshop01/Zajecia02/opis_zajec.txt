@@ -1,0 +1,57 @@
+0. Zadania do sprawdzenia:
+	- Sprawdzic co to jest PEP20 - Zen of Python
+	- Zainstalowac gita/ tortoisa i sklonowac repo z githuba (nie uieszczac projektowych i prywatnych rzeczy - repo jest publiczne)
+	- Zastanowic sie nad aplikacja, ktora bedziemy dewelopowac w grupie
+	- Zrobic zadanie w domu i zaladowac na repo:
+1. Struktury danych
+	- listy [,,,], index , [0][:] nawiazac do slice, listap[6]= "s", methody , sorted, [[[],[]]], dwie listy +*, in not in, a,b,c = lista
+	- del()
+	- len()
+	- sum()
+	- Slowniki , klucz wartosc, {k:w,k2:w2}, keys() , values()[1] {2,2:{3:2}} ,dict() , x[2] = 23 , clear()
+	- ordered dict , collections
+	- tuple, niemodyfikowalne () lub bez, tuple(list)
+	- {,,,,}  set() , podobne do list methody , & , | ^ , - , <, - , <= contain >=
+	- type()
+2. if else elif
+	- wciecia bez nawiasow
+	- and, or , not ! , < <=
+	- is and ==  i id()
+	- pass
+	- switch ?  dict eval pep 3103
+	def domain_validation(domain_name):
+	return {
+		'ENT': build_log_ent,
+		'RAD': build_log_rad,
+		'CVTO': build_log_cvto,
+		'CONN': build_log_conn,
+		'HS': build_log_hs,
+		'SSW': build_log_ssw,
+	}.get(domain_name, False)
+3. algorytm sortowania babelkowego
+4. Zadanie
+	- Do poprzedniego zadania dorubcie cos ze slownikami , np statusy lub cokolwiek
+	- uzyjcie jakies struktury danych zeby wyswietlic wszystkich z imienia i nazwiska , wybrac osobe ktora przygotowywala spota i wyswietlic na koncu
+	- jezeli sa faile iles procent to status red / yellow /green
+5. QUIZ
+1.  Wynik i wynik jak zastapimy and -> or
+if (1) and (2+2 >3):
+    print True
+else:
+    print False
+
+2. Co bedzie wynikiem
+slowniki = {"asd" : 2, "ddd" : 3, 3:{"3":1}}
+print slowniki["asd"]
+print slowniki.keys()
+print slowniki.values()[1]
+print slowniki[3][3]
+
+3.
+liczbaPierwsza = 123
+stringDrugaa = 122+1
+
+if liczbaPierwsza == stringDrugaa:
+if stringDrugaa is liczbaPierwsza:
+
+
