@@ -1,0 +1,23 @@
+0. utf 
+- decode utf-8
+- pep 0263
+1. funkcje 
+- def(), argumetry parametry , return
+- locals()
+- global , przed
+2. loops
+- for :  lista,range (list), xrange (lazy), pamiec
+- contine break,
+- while:
+3. iteratory
+- iter() , next z listy
+4. genertaory
+- yield , x= generator 
+5. timeit.timeit()
+mierzenie czasu
+6. try catch
+- StopIteration
+
+7. kalkulator praca w grupie
+
+
