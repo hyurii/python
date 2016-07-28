@@ -4,6 +4,8 @@ Created on 28 lip 2016
 @author: zablodan
 '''
 import pickle
+from python4 import * 
+
 
 def ReadFile():
     file = open("PLIK.txt", "r+")
@@ -21,7 +23,7 @@ def zmiana():
             load[x] = wartosc
     print load
     
-    WriteFile(load)
+    writeFile(load)
     
-
-
+if __name__ == '__main__':
+    zmiana()

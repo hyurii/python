@@ -3,7 +3,7 @@ Created on 28 lip 2016
 
 '''
 import pickle
-import * from python4
+from python4 import * 
 
 file =  open("plik.txt", "r") 
 
@@ -13,10 +13,9 @@ file.close()
 
 x = xtr["PLN"]
 
-y = xtr["CHR"]
+y = xtr["CHF"]
 
-xtr["CHR"] = x
+xtr["CHF"] = x
 xtr["PLN"] = y
-
 
 writeFile(xtr)
