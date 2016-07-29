@@ -1,0 +1,12 @@
+(dp0
+S'PLN'
+p1
+F2.33
+sS'GBP'
+p2
+F5.66
+sS'CHF'
+p3
+S'1'
+p4
+s.
