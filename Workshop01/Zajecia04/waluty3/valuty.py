@@ -9,7 +9,7 @@ dict = {"CHF": 2.33, "PLN": 4.55, "GBP": 5.66}
 
 
 def writeDict(x):
-    plik = open("plik.txt", "w")
+    plik = open("plik.txt", "wb")
     pickle.dump(x, plik, pickle.HIGHEST_PROTOCOL)
     plik.close()
 
