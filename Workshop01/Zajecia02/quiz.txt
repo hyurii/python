@@ -1,0 +1,23 @@
+5. QUIZ
+1.  Wynik i wynik jak zastapimy and -> or
+
+if (1) and (2+2 >3):
+    print True
+else:
+    print False
+
+2. Co bedzie wynikiem
+
+slowniki = {"asd" : 2, "ddd" : 3, 3:{"3":1}}
+print slowniki["asd"]
+print slowniki.keys()
+print slowniki.values()[1]
+print slowniki[3][3]
+
+3.
+liczbaPierwsza = 123
+stringDrugaa = 122
+stringDrugaa = stringDruga+1
+
+if liczbaPierwsza == stringDrugaa:
+if stringDrugaa is liczbaPierwsza:
