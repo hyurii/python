@@ -12,6 +12,9 @@ def zapis(dict2):
     pickle.dump(dict2, plik, 0)
     plik.close()
 
+
 if __name__ == '__main__':
-    dict2 = {"EUR": 3.99, "PLN": 2.50, "CHR": 10.50}
+    dict2 = {"EUR": 3.99, "PLN": 2.50, "CHR": 10.50} 
     zapis(dict2)
+
+
