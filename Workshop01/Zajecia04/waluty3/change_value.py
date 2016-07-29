@@ -1,14 +1,14 @@
 from valuty import *
 
+try:
+    fileN = open("plik.txt", "rb")
+    x = pickle.load(fileN)
+except:
+    print "Something is wrong with file!"
+else:
+    currency = raw_input("Which currency do you want to change: EUR, PLN, CHF")
+    kwota = float(raw_input("Value: "))
 
-fileN = open("plik.txt", "rb")
-x = pickle.load(file)
-#print type(x)
-
-currency = raw_input("Which currency do you want to change: EUR, PLN, CHR")
-kwota = float(raw_input("Currency: "))
-
-x[currency]= kwota
-fileN.close()
-
-writeDict(x)
+    x[currency] = kwota
+    fileN.close()
+    writeDict(x)
