@@ -1,0 +1,21 @@
+0. file 
+- name
+- open , for 
+- read() , read(5)
+- write, \n, 
+- seek (setposition/ flush)
+- close
+- methods, a, r ,b w , +
+- readline, readlines  -  duze pliki
+- split, "".join()
+1. serialization
+- pickle , cpickle , shelve
+- dump , pickle.HIGHEST_PROTOCOL
+- load
+2. json
+- loads
+- dumps
+- load
+
+dod. 
+- with "sad.txt" as file: for
