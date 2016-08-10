@@ -1,0 +1,27 @@
+0. openpyxl
+- instalacja / pip
+1. read
+- load_workbook(path)
+- get_sheet_names()
+- get_active_sheet / .active
+- get_sheet_by_name()
+- title
+- print sheet["A1"].value / .column / .row
+- print sheet.cell(row=1, column=1).value
+- for ...
+2. write
+- wb = Workbook()
+- = .active
+- title = 
+- ws["B2"] = 42
+- ws.cell(row=1,column=1).value = "FUFU"
+- wb.save(path)
+- ft = Font(name='Calibri', size=55,color=colors.RED) - zajrzec do srodka Font
+- ws.cell(row=1,column=1).font = 
+- cell.comment = Comment(text="A comment", author="Author's Name")
+- cell = WriteOnlyCell(ws, value="hello world") 
+- ws.append([cell, 777, 12313.7])
+- wb = Workbook(write_only=True) / read_only
+
+dod. 
+- xlrd / xlwt / xlutils
