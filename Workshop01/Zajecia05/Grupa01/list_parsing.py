@@ -9,7 +9,7 @@ def ListParsing(List):
         for y in range(len(List[1])):
             if List[x][y] == "NOT TESTED":
                 i += 1
-                newList.append(List[x][y])
+                newList.append(List[x-2][y])
     #print i, newList
     return i, newList
 
