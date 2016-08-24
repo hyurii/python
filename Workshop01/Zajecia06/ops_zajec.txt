@@ -1,0 +1,35 @@
+0. postgresql
+- pendrive
+- instalacja
+1. db
+- import psycopg2
+- connect 
+- wyjatek sys.exc_info()[0],  psycopg2.DatabaseError, e
+- conn.cursor()
+- cur.execute();
+- SQL INSERT, SELECT ,UDPATE, DROP , CREATE TABLE , WHERE
+- rows = cur.fetchall() , fetchone()
+- conn.commit()
+- conn.rollback()
+- to dict
+- conn.close()
+
+
+cars = (
+    (1, 'Audi', 52642),
+    (2, 'Mercedes', 57127),
+    (3, 'Skoda', 9000),
+    (4, 'Volvo', 29000),
+    (5, 'Bentley', 350000),
+    (6, 'Citroen', 21000),
+    (7, 'Hummer', 41400),
+    (8, 'Volkswagen', 21600)
+	
+- query = "INSERT INTO Cars (Id, Name, Price) VALUES (%s, %s, %s)"
+- cur.executemany(query, cars)
+
+Zadania:
+1. INSERT z excela do bazy
+2. Update wszystkiego NOT TESTED na NOT RUN
+3. Wrzucenie do dict i wyswietlenie wszystkich oprocz NOT TESTED
+3. Usuniecie wsyzstkich interfacow z nazwa zawierajaca "cvto"
