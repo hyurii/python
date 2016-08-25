@@ -7,7 +7,7 @@ Created on 25 sie 2016
 import psycopg2
 
 try:
-    conn = psycopg2.connect(database='postgres', user='postgres', password='kgbms3', host='localhost', port='5432')
+    conn = psycopg2.connect(database='postgres', user='postgres', password='', host='localhost', port='5432')
 except psycopg2.DatabaseError as e:
     print 'cos nie poszlo' + str(e)
 
